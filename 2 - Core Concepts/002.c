@@ -34,7 +34,14 @@ int addNumbers()
 
         return num1+num2;
     }
-
+//Struct
+struct Student{
+    int age;
+    double gpa;
+    char grade;
+};
+//name the struct, define its entries and their types
+//declare the struct outside of main, and use a ; at the end of the declaration
 
 
 int main ()
@@ -121,7 +128,56 @@ int main ()
 
 
     //If Statements
+    // &&, |, ==, !=, >, <, >=, <=, 
+    int condA = 1;
+    int condB = 1;
 
+    if(condA != 0 && condB != 0)
+    {
+        printf("AND Condition Filled\n");
+    } else if (condA != 0 && condB == 0)
+    {
+        printf("only B true\n");
+    }
+
+    //Switch Statements
+    char token = 'a';
+    switch(token){
+        case 'a':
+            printf("a condition met\n");
+            break;
+        case 'b':
+            printf("b condition met\n");
+            break;
+        default:
+        printf("no condition met\n");;
+    }
+
+
+    //While Loops
+    int index = 1;
+    while(index <= 5) // <=5 stops at 5
+    {
+        printf("While %d, \n", index);
+        index++;
+    }
+
+
+    //for loops
+    for(int x = 0 ; x < 5 ; x++ ) // initializer, stop condition, iterate action
+    { //<5 stops at 4
+        printf("count: %d\n", x);
+    }
+
+
+    //STRUCTS
+    //like a dictionary or an object, not associated with a class
+    struct Student jeremy;
+    jeremy.age = 26;
+    jeremy.gpa = 3.9;
+    jeremy.grade = 'A';
+    //Struct is a custom dataset/datatype
+    //C has no classes and is not object oriented
 
     return 0; //Functions need a return statement
 }
