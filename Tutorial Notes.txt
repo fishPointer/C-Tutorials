@@ -1,0 +1,4 @@
+When running the C File in VSCodium, it automatically builds it into an untyped executable by the same name in the same folder.
+I can run the program from terminal with
+>./001
+Which is pretty straightforward.
