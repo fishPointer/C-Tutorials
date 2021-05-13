@@ -1,3 +1,7 @@
+This Tutorial is based on this video:
+https://www.youtube.com/watch?v=3lQEunpmtRA
+
+
 When running the C File in VSCodium, it automatically builds it into an untyped executable by the same name in the same folder.
 I can run the program from terminal with
 >./001
@@ -9,7 +13,7 @@ OR You can just CTRL+ALT+N and then CTRL+ALT+M, then go back to the terminal
 OR You can just run >gcc 002.c -o 002, and then run ./002 over and over
     This seems to be the most convenient solution, as it doesn't force you from Terminal->Output every compiles
 
-    
+
 
 Template to Start Programs:
 
