@@ -19,8 +19,22 @@ double risk = .005; //double-precision floating point
 long double surprise = 0.00001; //extended-precision floating point
 
 
-int IS_TRUE; //Don't bother with bool in C, just use int 1,0
-IS_TRUE = 1; 
+int IS_TRUE = 1; //Don't bother with bool in C, just use int 1,0
+
+
+int addNumbers()
+    {
+        int num1;
+        int num2;
+        
+        printf("enter num1: ");
+        scanf("%d", &num1);
+        printf("\nenter num2: ");
+        scanf("%d", &num2);
+
+        return num1+num2;
+    }
+
 
 
 int main ()
@@ -79,6 +93,34 @@ int main ()
     printf("Num is now %d \n", num);
 
 
+    //Taking in User Input
+    char input[10];
+    printf("Enter your name: ");
+    fgets(input, 10, stdin); //fgets retrieves user input. 1:where store data,2:char limit,3:where pull from 
+    printf("Hello stupid, %s \n", input);
+
+    //Use fgets for character arrays, and scanf for ints/doubles/floats/single chars
+    double gpa;
+    printf("Enter your gpa: ");
+    scanf("%lf", &gpa); // scanf sends the data to the address given, it does not store it to the variable directly
+    printf("Your GPA is %f \n", gpa);
+
+
+    //Arrays
+    int luckyNumbers[] =    {3, 4, 5, 1, 5, 6, 42, 25};
+                        //   0, 1, 2, 3, 4, 5, 6,  7 
+    luckyNumbers[0] = 90;
+    printf("%d \n", luckyNumbers[0]);
+    //multidimensinonal: luckyNumbers[][]
+
+
+
+    //Function Calling
+    printf("Results!! is: %d \n", addNumbers());
+
+
+
+    //If Statements
 
 
     return 0; //Functions need a return statement
