@@ -2,3 +2,24 @@ When running the C File in VSCodium, it automatically builds it into an untyped 
 I can run the program from terminal with
 >./001
 Which is pretty straightforward.
+
+HOWEVER, If the program expects user input, the VSCodium "Output"Terminal will not function properly, as it is read only
+In this case, just keep a terminal open on hand to run the code after it compiles...
+OR You can just CTRL+ALT+N and then CTRL+ALT+M, then go back to the terminal 
+OR You can just run >gcc 002.c -o 002, and then run ./002 over and over
+    This seems to be the most convenient solution, as it doesn't force you from Terminal->Output every compiles
+
+    
+
+Template to Start Programs:
+
+    #include <stdio.h>
+    #include <stdlib.h>
+
+    int main ()
+    {
+
+
+        return 0;
+    }
+
